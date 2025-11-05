@@ -28,7 +28,7 @@ export const handleFeedback = async (req, res) => {
 
     res.json({ message: 'Feedback saved to MongoDB.' });
   } catch (error) {
-    console.error('❌ Feedback Save Error:', error.name, error.message);
+    console.error('Feedback Save Error:', error.name, error.message);
 
     // Optionally include more debugging info
     if (error.name === 'ValidationError') {
